@@ -264,31 +264,31 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
-#services .services {
+/* blogs Section */
+#blogs .blogs {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#services .service-top {
+#blogs .blog-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
-#services .service-bottom {
+#blogs .blog-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
-#services .service-item {
+#blogs .blog-item {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	flex-direction: column;
+	flex-direction: row;
 	padding: 30px;
 	border-radius: 10px;
 	background-image: url(./img/img-1.png);
@@ -298,7 +298,7 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
-#services .service-item::after {
+#blogs .blog-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -309,22 +309,22 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#services .service-bottom .icon {
+#blogs .blog-bottom .icon {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
 }
-#services .service-item h2 {
+#blogs .blog-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
-#services .service-item p {
+#blogs .blog-item p {
 	color: white;
 	text-align: left;
 }
-/* End Services Section */
+/* End blogs Section */
 
 /* Projects section */
 #projects .projects {
@@ -336,6 +336,29 @@ p {
 #projects .projects-header h1 {
 	margin-bottom: 50px;
 }
+.baby{
+	font-size: medium;
+	font-family: monospace;
+}
+.btn-1 {
+		display: inline-block;
+		padding: 10px 10px;
+		color: white;
+		background-color: transparent;
+		border: 2px solid crimson;
+		font-size: 1rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		margin-top: 30px;
+		transition: 0.3s ease;
+		transition-property: background-color, color;
+}
+.btn-1:hover {
+		color: white;
+		background-color: crimson;
+}
+
 #projects .all-projects {
 	display: flex;
 	align-items: center;
@@ -360,18 +383,20 @@ p {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #647b96 0%, #485563 100%);
 	color: white;
 }
 #projects .project-info h1 {
 	font-size: 4rem;
-	font-weight: 500;
+	font-weight: 600;
+	color: coral;
 }
 #projects .project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
+
 #projects .project-info p {
 	color: white;
 }
@@ -388,7 +413,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, 100%);
 	opacity: 0.7;
 }
 #projects .project-img img {
